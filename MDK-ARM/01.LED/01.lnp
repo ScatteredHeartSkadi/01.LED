@@ -4,6 +4,7 @@
 "01.led\gpio.o"
 "01.led\stm32f1xx_it.o"
 "01.led\stm32f1xx_hal_msp.o"
+"01.led\stm32f1xx_hal_timebase_tim.o"
 "01.led\stm32f1xx_hal_gpio_ex.o"
 "01.led\stm32f1xx_hal_tim.o"
 "01.led\stm32f1xx_hal_tim_ex.o"
@@ -19,6 +20,15 @@
 "01.led\stm32f1xx_hal_exti.o"
 "01.led\system_stm32f1xx.o"
 "01.led\led.o"
+"01.led\heap_4.o"
+"01.led\port.o"
+"01.led\croutine.o"
+"01.led\event_groups.o"
+"01.led\list.o"
+"01.led\queue.o"
+"01.led\stream_buffer.o"
+"01.led\tasks.o"
+"01.led\timers.o"
 --strict --scatter "01.LED\01.sct"
 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers

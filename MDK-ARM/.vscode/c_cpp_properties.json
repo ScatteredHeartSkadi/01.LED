@@ -9,11 +9,15 @@
                 "d:\\code\\halStm32\\01.LED\\Drivers\\CMSIS\\Device\\ST\\STM32F1xx\\Include",
                 "d:\\code\\halStm32\\01.LED\\Drivers\\CMSIS\\Include",
                 "d:\\code\\halStm32\\01.LED\\Core\\Hardware",
+                "d:\\code\\halStm32\\01.LED\\FreeRTOS\\include",
+                "d:\\code\\halStm32\\01.LED\\FreeRTOS\\portable\\RVDS\\ARM_CM3",
                 "C:\\Keil_v5\\ARM\\ARMCC\\include",
                 "C:\\Keil_v5\\ARM\\ARMCC\\include\\rw",
                 "d:\\code\\halStm32\\01.LED\\MDK-ARM",
                 "d:\\code\\halStm32\\01.LED\\Core\\Src",
-                "d:\\code\\halStm32\\01.LED\\Drivers\\STM32F1xx_HAL_Driver\\Src"
+                "d:\\code\\halStm32\\01.LED\\Drivers\\STM32F1xx_HAL_Driver\\Src",
+                "d:\\code\\halStm32\\01.LED\\FreeRTOS\\portable\\MemMang",
+                "d:\\code\\halStm32\\01.LED\\FreeRTOS\\source"
             ],
             "defines": [
                 "USE_HAL_DRIVER",
