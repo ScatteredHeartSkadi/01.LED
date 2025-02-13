@@ -1,4 +1,6 @@
 #include "LED.h"
+#include "FreeRTOS.h"
+#include "task.h"
 
 // ...existing code...
 
@@ -64,9 +66,9 @@ void LED_ON_OFF(uint8_t LEDx)
    for (uint8_t i = 1; i <= 3; i++)
    {
       LED_ON(i);
-      HAL_Delay(500);
+      vTaskDelay(500);
       LED_OFF(i);
-      HAL_Delay(500);
+      vTaskDelay(500);
    }
 }
 

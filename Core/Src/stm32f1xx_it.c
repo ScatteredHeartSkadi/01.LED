@@ -180,14 +180,13 @@ void DebugMon_Handler(void)
 //   /* USER CODE END PendSV_IRQn 1 */
 // }
 
-/**
-  * @brief This function handles System tick timer.
-  */
-
- /* USER CODE BEGIN PV */
+/* USER CODE BEGIN PV */
 extern void xPortSysTickHandler(void);
 /* USER CODE END PV */
 
+/**
+  * @brief This function handles System tick timer.
+  */
 void SysTick_Handler(void)
 {
   /* USER CODE BEGIN SysTick_IRQn 0 */

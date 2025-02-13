@@ -26,6 +26,16 @@
 01.led\led.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h
 01.led\led.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h
 01.led\led.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h
+01.led\led.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_i2c.h
 01.led\led.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h
 01.led\led.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h
 01.led\led.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h
+01.led\led.o: ../FreeRTOS/include/FreeRTOS.h
+01.led\led.o: ../Core/Inc/FreeRTOSConfig.h
+01.led\led.o: ../FreeRTOS/include/projdefs.h
+01.led\led.o: ../FreeRTOS/include/portable.h
+01.led\led.o: ../FreeRTOS/include/deprecated_definitions.h
+01.led\led.o: ../FreeRTOS/portable/RVDS/ARM_CM3/portmacro.h
+01.led\led.o: ../FreeRTOS/include/mpu_wrappers.h
+01.led\led.o: ../FreeRTOS/include/task.h
+01.led\led.o: ../FreeRTOS/include/list.h
