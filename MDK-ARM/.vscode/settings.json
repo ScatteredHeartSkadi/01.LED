@@ -1,6 +1,9 @@
 {
     "files.associations": {
         "gpio.h": "c",
-        "led.h": "c"
+        "led.h": "c",
+        "main.h": "c",
+        "i2c.h": "c",
+        "freertos_demo.h": "c"
     }
 }
