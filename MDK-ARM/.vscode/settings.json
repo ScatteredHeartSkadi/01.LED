@@ -4,6 +4,10 @@
         "led.h": "c",
         "main.h": "c",
         "i2c.h": "c",
-        "freertos_demo.h": "c"
+        "freertos_demo.h": "c",
+        "oled.h": "c",
+        "stdio.h": "c",
+        "cstdio": "c",
+        "usart.h": "c"
     }
 }

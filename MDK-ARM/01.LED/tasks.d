@@ -14,3 +14,4 @@
 01.led\tasks.o: ../FreeRTOS/include/list.h
 01.led\tasks.o: ../FreeRTOS/include/timers.h
 01.led\tasks.o: ../FreeRTOS/include/stack_macros.h
+01.led\tasks.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h

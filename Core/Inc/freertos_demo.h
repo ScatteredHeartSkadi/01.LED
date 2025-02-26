@@ -3,6 +3,8 @@
 
 void FreeRTOS_Start(void);
 void Start_Task(void *pvParameters);
-void Task1(void *pvParameters);
+void TaskLedOn(void *pvParameters);
+void MPU6050(void *pvParameters);
+void KEY(void *pvParameters);
 
 #endif /* __FREERTOS_DEMO_H */

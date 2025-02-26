@@ -11,6 +11,8 @@
 01.led\freertos_demo.o: ../FreeRTOS/include/task.h
 01.led\freertos_demo.o: ../FreeRTOS/include/list.h
 01.led\freertos_demo.o: ../Core/Inc/freertos_demo.h
+01.led\freertos_demo.o: ../Core/Hardware/LED.h
+01.led\freertos_demo.o: ../Core/Inc/gpio.h
 01.led\freertos_demo.o: ../Core/Inc/main.h
 01.led\freertos_demo.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h
 01.led\freertos_demo.o: ../Core/Inc/stm32f1xx_hal_conf.h
@@ -38,5 +40,7 @@
 01.led\freertos_demo.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h
 01.led\freertos_demo.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h
 01.led\freertos_demo.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h
-01.led\freertos_demo.o: ../Core/Hardware/LED.h
-01.led\freertos_demo.o: ../Core/Inc/gpio.h
+01.led\freertos_demo.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h
+01.led\freertos_demo.o: ../Core/Hardware/OLED.h
+01.led\freertos_demo.o: ../Core/Hardware/MPU6050.h
+01.led\freertos_demo.o: ../Core/Hardware/key.h

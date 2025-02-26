@@ -61,6 +61,8 @@ void LED_Toggle(uint8_t LEDx)
    }
 }
 
+/// @brief LED灯流转
+/// @param LEDx 
 void LED_ON_OFF(uint8_t LEDx)
 {
    for (uint8_t i = 1; i <= 3; i++)

@@ -28,6 +28,7 @@
 01.led\stm32f1xx_it.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h
 01.led\stm32f1xx_it.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h
 01.led\stm32f1xx_it.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h
+01.led\stm32f1xx_it.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h
 01.led\stm32f1xx_it.o: ../Core/Inc/stm32f1xx_it.h
 01.led\stm32f1xx_it.o: ../FreeRTOS/include/FreeRTOS.h
 01.led\stm32f1xx_it.o: ../Core/Inc/FreeRTOSConfig.h
