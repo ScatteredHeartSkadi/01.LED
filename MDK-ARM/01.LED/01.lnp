@@ -38,7 +38,7 @@
 "01.led\stream_buffer.o"
 "01.led\tasks.o"
 "01.led\timers.o"
---strict --scatter "01.LED\01.sct"
+--library_type=microlib --strict --scatter "01.LED\01.sct"
 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers
 --list "01.map" -o 01.LED\01.LED

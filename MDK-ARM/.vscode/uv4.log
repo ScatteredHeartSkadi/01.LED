@@ -1,3 +1,15 @@
-Load "01.LED\\01.LED" 
-Erase Done.Programming Done.Verify OK.Application running ...
-Flash Load finished at 22:55:43
+*** Using Compiler 'V5.06 update 5 (build 528)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Build target '01.LED'
+compiling majormain.c...
+..\Core\Src\majormain.c(23): warning:  #223-D: function "MX_GPIO_Init" declared implicitly
+    MX_GPIO_Init();
+..\Core\Src\majormain.c(26): warning:  #223-D: function "MX_I2C2_Init" declared implicitly
+    MX_I2C2_Init();
+..\Core\Src\majormain.c(27): warning:  #223-D: function "MX_I2C1_Init" declared implicitly
+    MX_I2C1_Init();
+..\Core\Src\majormain.c: 3 warnings, 0 errors
+linking...
+Program Size: Code=6376 RO-data=312 RW-data=84 ZI-data=1540  
+FromELF: creating hex file...
+"01.LED\01.LED" - 0 Error(s), 3 Warning(s).
+Build Time Elapsed:  00:00:42
