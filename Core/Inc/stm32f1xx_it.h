@@ -1,11 +1,3 @@
-/*
- * @Author: error: error: git config user.name & please set dead value or install git && error: git config user.email & please set dead value or install git & please set dead value or install git
- * @Date: 2025-02-17 15:52:08
- * @LastEditors: error: error: git config user.name & please set dead value or install git && error: git config user.email & please set dead value or install git & please set dead value or install git
- * @LastEditTime: 2025-02-25 15:02:36
- * @FilePath: \MDK-ARMe:\Personal\HalStm32\01.LED\Core\Inc\stm32f1xx_it.h
- * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
- */
 /* USER CODE BEGIN Header */
 /**
  ******************************************************************************
@@ -30,49 +22,45 @@
 #define __STM32F1xx_IT_H
 
 #ifdef __cplusplus
-extern "C"
-{
+ extern "C" {
 #endif
 
-#include "main.h"
+/* Private includes ----------------------------------------------------------*/
+/* USER CODE BEGIN Includes */
 
+/* USER CODE END Includes */
 
-  /* Private includes ----------------------------------------------------------*/
-  /* USER CODE BEGIN Includes */
+/* Exported types ------------------------------------------------------------*/
+/* USER CODE BEGIN ET */
 
-  /* USER CODE END Includes */
+/* USER CODE END ET */
 
-  /* Exported types ------------------------------------------------------------*/
-  /* USER CODE BEGIN ET */
+/* Exported constants --------------------------------------------------------*/
+/* USER CODE BEGIN EC */
 
-  /* USER CODE END ET */
+/* USER CODE END EC */
 
-  /* Exported constants --------------------------------------------------------*/
-  /* USER CODE BEGIN EC */
+/* Exported macro ------------------------------------------------------------*/
+/* USER CODE BEGIN EM */
 
-  /* USER CODE END EC */
+/* USER CODE END EM */
 
-  /* Exported macro ------------------------------------------------------------*/
-  /* USER CODE BEGIN EM */
+/* Exported functions prototypes ---------------------------------------------*/
+void NMI_Handler(void);
+void HardFault_Handler(void);
+void MemManage_Handler(void);
+void BusFault_Handler(void);
+void UsageFault_Handler(void);
+void SVC_Handler(void);
+void DebugMon_Handler(void);
+void PendSV_Handler(void);
+void SysTick_Handler(void);
+void TIM2_IRQHandler(void);
+void TIM4_IRQHandler(void);
+void USART1_IRQHandler(void);
+/* USER CODE BEGIN EFP */
 
-  /* USER CODE END EM */
-
-  /* Exported functions prototypes ---------------------------------------------*/
-  void NMI_Handler(void);
-  void HardFault_Handler(void);
-  void MemManage_Handler(void);
-  void BusFault_Handler(void);
-  void UsageFault_Handler(void);
-  void SVC_Handler(void);
-  void DebugMon_Handler(void);
-  void PendSV_Handler(void);
-  void SysTick_Handler(void);
-  void TIM4_IRQHandler(void);
-  void USART1_IRQHandler(void);
-  void EXTI15_10_IRQHandler(void);
-  /* USER CODE BEGIN EFP */
-
-  /* USER CODE END EFP */
+/* USER CODE END EFP */
 
 #ifdef __cplusplus
 }

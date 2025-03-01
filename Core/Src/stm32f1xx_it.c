@@ -57,8 +57,11 @@
 /* USER CODE END 0 */
 
 /* External variables --------------------------------------------------------*/
+extern TIM_HandleTypeDef htim2;
 extern UART_HandleTypeDef huart1;
 extern TIM_HandleTypeDef htim4;
+
+extern void xPortSysTickHandler(void);
 
 /* USER CODE BEGIN EV */
 
@@ -181,8 +184,6 @@ void DebugMon_Handler(void)
 //   /* USER CODE END PendSV_IRQn 1 */
 // }
 
-extern void xPortSysTickHandler(void);
-
 /**
   * @brief This function handles System tick timer.
   */
@@ -206,6 +207,20 @@ void SysTick_Handler(void)
 /* For the available peripheral interrupt handler names,                      */
 /* please refer to the startup file (startup_stm32f1xx.s).                    */
 /******************************************************************************/
+
+/**
+  * @brief This function handles TIM2 global interrupt.
+  */
+void TIM2_IRQHandler(void)
+{
+  /* USER CODE BEGIN TIM2_IRQn 0 */
+
+  /* USER CODE END TIM2_IRQn 0 */
+  HAL_TIM_IRQHandler(&htim2);
+  /* USER CODE BEGIN TIM2_IRQn 1 */
+
+  /* USER CODE END TIM2_IRQn 1 */
+}
 
 /**
   * @brief This function handles TIM4 global interrupt.
@@ -235,32 +250,6 @@ void USART1_IRQHandler(void)
   /* USER CODE END USART1_IRQn 1 */
 }
 
-/**
-  * @brief This function handles EXTI line[15:10] interrupts.
-  */
-void EXTI15_10_IRQHandler(void)
-{
-  /* USER CODE BEGIN EXTI15_10_IRQn 0 */
-
-  /* USER CODE END EXTI15_10_IRQn 0 */
-  HAL_GPIO_EXTI_IRQHandler(KEY1_Pin);
-  HAL_GPIO_EXTI_IRQHandler(KEY2_Pin);
-  /* USER CODE BEGIN EXTI15_10_IRQn 1 */
-
-  /* USER CODE END EXTI15_10_IRQn 1 */
-}
-
-extern uint8_t isOver;
-extern uint16_t size;
-
-void HAL_UARTEx_RxEventCallback(UART_HandleTypeDef *huart, uint16_t Size)
-{
-  isOver = 1;
-  size = Size;
-}
-
 /* USER CODE BEGIN 1 */
 
 /* USER CODE END 1 */
-
-

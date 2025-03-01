@@ -1,4 +1,3 @@
-#include "i2c.h"
 #include "OLED_Font.h"
 #include "gpio.h"
 #include "main.h"

@@ -19,7 +19,7 @@
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
 #include "usart.h"
-
+#include <stdio.h>
 /* USER CODE BEGIN 0 */
 
 /* USER CODE END 0 */
@@ -84,7 +84,7 @@ void HAL_UART_MspInit(UART_HandleTypeDef* uartHandle)
     HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
 
     /* USART1 interrupt Init */
-    HAL_NVIC_SetPriority(USART1_IRQn, 2, 0);
+    HAL_NVIC_SetPriority(USART1_IRQn, 4, 0);
     HAL_NVIC_EnableIRQ(USART1_IRQn);
   /* USER CODE BEGIN USART1_MspInit 1 */
 
@@ -117,18 +117,10 @@ void HAL_UART_MspDeInit(UART_HandleTypeDef* uartHandle)
   }
 }
 
-
 /* USER CODE BEGIN 1 */
 int fputc(int ch, FILE *file)
 {
-    /* 从串口读取数据：
-               参数1 指定的串口
-               参数2：存储读取到的数据
-               参数3：一共接收多少条数据
-               参数4：超时时间
-       */
-
-  HAL_UART_Transmit(&huart1, (uint8_t *)&ch, 1, 1000);
+  HAL_UART_Transmit(&huart1, (uint8_t *)&ch, 1, 10);
   return (ch);
 }
 /* USER CODE END 1 */

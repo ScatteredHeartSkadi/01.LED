@@ -1,4 +1,3 @@
-#include "i2c.h"                // Device header
 #include "MPU6050_Reg.h"
 #include "main.h"
 #include "stm32f1xx_hal.h"

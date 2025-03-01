@@ -1,5 +1,5 @@
 01.led\mpu6050.o: ..\Core\Hardware\MPU6050.c
-01.led\mpu6050.o: ../Core/Inc/i2c.h
+01.led\mpu6050.o: ..\Core\Hardware\MPU6050_Reg.h
 01.led\mpu6050.o: ../Core/Inc/main.h
 01.led\mpu6050.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h
 01.led\mpu6050.o: ../Core/Inc/stm32f1xx_hal_conf.h
@@ -25,9 +25,7 @@
 01.led\mpu6050.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h
 01.led\mpu6050.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h
 01.led\mpu6050.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h
-01.led\mpu6050.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_i2c.h
 01.led\mpu6050.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h
 01.led\mpu6050.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h
 01.led\mpu6050.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h
 01.led\mpu6050.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h
-01.led\mpu6050.o: ..\Core\Hardware\MPU6050_Reg.h

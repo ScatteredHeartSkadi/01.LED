@@ -6,5 +6,6 @@ void Start_Task(void *pvParameters);
 void TaskLedOn(void *pvParameters);
 void MPU6050(void *pvParameters);
 void KEY(void *pvParameters);
+void UARTEx(void *pvParameters);
 
 #endif /* __FREERTOS_DEMO_H */

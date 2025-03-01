@@ -8,6 +8,10 @@
         "oled.h": "c",
         "stdio.h": "c",
         "cstdio": "c",
-        "usart.h": "c"
+        "usart.h": "c",
+        "freertos.h": "c",
+        "callback.h": "c",
+        "stm32f1xx_it.h": "c",
+        "tim.h": "c"
     }
 }
