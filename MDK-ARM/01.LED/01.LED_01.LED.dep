@@ -1,7 +1,7 @@
 Dependencies for Project '01.LED', Target '01.LED': (DO NOT MODIFY !)
 F (startup_stm32f103xb.s)(0x67C29212)(--cpu Cortex-M3 -g --apcs=interwork --pd "__MICROLIB SETA 1"-I.\RTE\_01.LED-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include--pd "__UVISION_VERSION SETA 524" --pd "_RTE_ SETA 1" --pd "STM32F10X_MD SETA 1"--list startup_stm32f103xb.lst --xref -o 01.led\startup_stm32f103xb.o --depend 01.led\startup_stm32f103xb.d)
 F (..\Core\Inc\FreeRTOSConfig.h)(0x67C14454)()
-F (..\Core\Src\freertos_demo.c)(0x67C29C28)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Core/Hardware -I ../FreeRTOS/include -I ../FreeRTOS/portable/RVDS/ARM_CM3-I.\RTE\_01.LED-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-D__UVISION_VERSION="524" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o 01.led\freertos_demo.o --omf_browse 01.led\freertos_demo.crf --depend 01.led\freertos_demo.d)
+F (..\Core\Src\freertos_demo.c)(0x67C44A28)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Core/Hardware -I ../FreeRTOS/include -I ../FreeRTOS/portable/RVDS/ARM_CM3-I.\RTE\_01.LED-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-D__UVISION_VERSION="524" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o 01.led\freertos_demo.o --omf_browse 01.led\freertos_demo.crf --depend 01.led\freertos_demo.d)
 I (../FreeRTOS/include/FreeRTOS.h)(0x67B2EAAA)
 I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x588B8344)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x588B8344)
@@ -47,7 +47,7 @@ I (../Core/Hardware/MPU6050.h)(0x67B495E8)
 I (../Core/Hardware/key.h)(0x615AC3EF)
 I (../Core/Inc/usart.h)(0x67C29210)
 F (..\Core\Inc\freertos_demo.h)(0x67BFC1CC)()
-F (..\Core\Src\majormain.c)(0x67C29B1F)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Core/Hardware -I ../FreeRTOS/include -I ../FreeRTOS/portable/RVDS/ARM_CM3-I.\RTE\_01.LED-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-D__UVISION_VERSION="524" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o 01.led\majormain.o --omf_browse 01.led\majormain.crf --depend 01.led\majormain.d)
+F (..\Core\Src\majormain.c)(0x67C44CDA)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Core/Hardware -I ../FreeRTOS/include -I ../FreeRTOS/portable/RVDS/ARM_CM3-I.\RTE\_01.LED-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-D__UVISION_VERSION="524" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o 01.led\majormain.o --omf_browse 01.led\majormain.crf --depend 01.led\majormain.d)
 I (../Core/Inc/main.h)(0x67C128F0)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x67B47F14)
 I (../Core/Inc/stm32f1xx_hal_conf.h)(0x67C29211)
@@ -77,6 +77,7 @@ I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h)(0x67B47F14)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h)(0x67B47F14)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h)(0x67B47F14)
 I (../Core/Inc/freertos_demo.h)(0x67BFC1CC)
+I (../Core/Inc/usart.h)(0x67C29210)
 F (../Core/Src/main.c)(0x67C29285)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Core/Hardware -I ../FreeRTOS/include -I ../FreeRTOS/portable/RVDS/ARM_CM3-I.\RTE\_01.LED-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-D__UVISION_VERSION="524" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o 01.led\main.o --omf_browse 01.led\main.crf --depend 01.led\main.d)
 I (../Core/Inc/main.h)(0x67C128F0)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x67B47F14)
@@ -169,7 +170,7 @@ I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h)(0x67B47F14)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h)(0x67B47F14)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h)(0x67B47F14)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h)(0x67B47F14)
-F (../Core/Src/usart.c)(0x67C29BFA)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Core/Hardware -I ../FreeRTOS/include -I ../FreeRTOS/portable/RVDS/ARM_CM3-I.\RTE\_01.LED-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-D__UVISION_VERSION="524" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o 01.led\usart.o --omf_browse 01.led\usart.crf --depend 01.led\usart.d)
+F (../Core/Src/usart.c)(0x67C44CBF)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Core/Hardware -I ../FreeRTOS/include -I ../FreeRTOS/portable/RVDS/ARM_CM3-I.\RTE\_01.LED-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-D__UVISION_VERSION="524" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o 01.led\usart.o --omf_browse 01.led\usart.crf --depend 01.led\usart.d)
 I (../Core/Inc/usart.h)(0x67C29210)
 I (../Core/Inc/main.h)(0x67C128F0)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x67B47F14)

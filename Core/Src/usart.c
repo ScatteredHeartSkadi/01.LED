@@ -120,7 +120,14 @@ void HAL_UART_MspDeInit(UART_HandleTypeDef* uartHandle)
 /* USER CODE BEGIN 1 */
 int fputc(int ch, FILE *file)
 {
-  HAL_UART_Transmit(&huart1, (uint8_t *)&ch, 1, 10);
+  HAL_UART_Transmit(&huart1, (uint8_t *)&ch, 1, 1000);
   return (ch);
 }
 /* USER CODE END 1 */
+extern uint8_t isOver;
+extern uint16_t size;
+void HAL_UARTEx_RxEventCallback(UART_HandleTypeDef *huart, uint16_t Size)
+{
+  isOver = 1;
+  size = Size;
+}

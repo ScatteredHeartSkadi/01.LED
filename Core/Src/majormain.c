@@ -2,14 +2,18 @@
  * @Author: error: error: git config user.name & please set dead value or install git && error: git config user.email & please set dead value or install git & please set dead value or install git
  * @Date: 2025-02-17 15:52:08
  * @LastEditors: 3248698481 onmylive842@gmail.com
- * @LastEditTime: 2025-03-01 13:29:03
+ * @LastEditTime: 2025-03-02 20:10:55
  * @FilePath: \MDK-ARMe:\Personal\HalStm32\01.LED\Core\Src\majormain.c
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
  */
 #include "main.h"
 #include "freertos_demo.h"
+#include "usart.h"
 
-extern TIM_HandleTypeDef htim2;
+extern uint8_t arr[100];
+extern uint16_t size;
+extern uint8_t isOver;
+extern UART_HandleTypeDef huart1;
 
 void SystemClock_Config(void);
 
@@ -27,8 +31,8 @@ int main(void)
   MX_TIM2_Init();
 
   FreeRTOS_Start();
-  Start_Task(NULL);
-  TaskLedOn(NULL);
+  // Start_Task(NULL);
+  // TaskLedOn(NULL);
   // MPU6050(NULL);
   // KEY(NULL);
   // UARTEx(NULL);
@@ -40,10 +44,11 @@ int main(void)
 
   while (1)
   {
-    // LED_ON_OFF();
-    // TaskLedOn(NULL);
-    // // MPU6050(NULL);
-    // // KEY(NULL);
-    // UARTEx(NULL);
+    // HAL_UARTEx_ReceiveToIdle_IT(&huart1, arr, 100);
+    // if (isOver)
+    // {
+    //   HAL_UART_Transmit(&huart1, arr, size, 1000);
+    //   isOver = 0;
+    // }
   }
 }

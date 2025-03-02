@@ -27,18 +27,18 @@ Project File Date:  03/01/2025
 <h2>Output:</h2>
 *** Using Compiler 'V5.06 update 5 (build 528)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
 Build target '01.LED'
-compiling freertos_demo.c...
-../Core/Inc/FreeRTOSConfig.h(105): warning:  #1-D: last line of file ends without a newline
-  //new
-../Core/Hardware/LED.h(17): warning:  #1295-D: Deprecated declaration LED_ON_OFF - give arg types
-  void LED_ON_OFF();             // 打开指定LED，关闭其他LED
-..\Core\Src\freertos_demo.c(139): warning:  #223-D: function "printf" declared implicitly
-      printf("KEY");
-..\Core\Src\freertos_demo.c(160): warning:  #223-D: function "printf" declared implicitly
-          printf("hello world\n");
-..\Core\Src\freertos_demo.c: 4 warnings, 0 errors
+compiling majormain.c...
+..\Core\Src\majormain.c(24): warning:  #223-D: function "MX_GPIO_Init" declared implicitly
+    MX_GPIO_Init();
+..\Core\Src\majormain.c(30): warning:  #223-D: function "MX_TIM1_Init" declared implicitly
+    MX_TIM1_Init();
+..\Core\Src\majormain.c(31): warning:  #223-D: function "MX_TIM2_Init" declared implicitly
+    MX_TIM2_Init();
+..\Core\Src\majormain.c(40): warning:  #223-D: function "printf" declared implicitly
+    printf("start\n");
+..\Core\Src\majormain.c: 4 warnings, 0 errors
 linking...
-Program Size: Code=10484 RO-data=312 RW-data=132 ZI-data=18924  
+Program Size: Code=10716 RO-data=312 RW-data=136 ZI-data=19024  
 FromELF: creating hex file...
 "01.LED\01.LED" - 0 Error(s), 4 Warning(s).
 

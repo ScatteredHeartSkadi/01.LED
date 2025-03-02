@@ -2,7 +2,7 @@
  * @Author: 3248698481 onmylive842@gmail.com
  * @Date: 2025-02-17 15:52:08
  * @LastEditors: 3248698481 onmylive842@gmail.com
- * @LastEditTime: 2025-03-01 13:28:02
+ * @LastEditTime: 2025-03-02 20:07:14
  * @FilePath: \MDK-ARMe:\Personal\HalStm32\01.LED\Core\Src\freertos_demo.c
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
  */
@@ -24,31 +24,31 @@ uint8_t isOver = 0;
 
 /* 启动任务函数 */
 #define START_TASK_PRIORITY 1
-#define START_TASK_STACK_DEPTH 64
+#define START_TASK_STACK_DEPTH 128
 TaskHandle_t start_task_handler;
 void Start_Task(void *pvParameters);
 
 /* LED 任务 配置 */
 #define TASK1_PRIORITY 3
-#define TASK1_STACK_DEPTH 36
+#define TASK1_STACK_DEPTH 128
 TaskHandle_t task1_handler;
 void TaskLedOn(void *pvParameters);
 
 /* MPU6050 任务 配置 */
 #define TASK2_PRIORITY 2
-#define TASK2_STACK_DEPTH 36
+#define TASK2_STACK_DEPTH 128
 TaskHandle_t task2_handler;
 void MPU6050(void *pvParameters);
 
 /* KEY 任务 配置 */
 #define TASK3_PRIORITY 3
-#define TASK3_STACK_DEPTH 36
+#define TASK3_STACK_DEPTH 128
 TaskHandle_t task3_handler;
 void KEY(void *pvParameters);
 
 /* UARTEx 任务 配置 */
 #define TASK4_PRIORITY 3
-#define TASK4_STACK_DEPTH 36
+#define TASK4_STACK_DEPTH 128
 TaskHandle_t task4_handler;
 void UARTEx(void *pvParameters);
 
@@ -85,12 +85,12 @@ void Start_Task(void *pvParameters)
                 (void *)NULL,
                 (UBaseType_t)TASK3_PRIORITY,
                 (TaskHandle_t *)&task3_handler);
-    // xTaskCreate((TaskFunction_t)UARTEx,
-    //             (char *)"UARTEx",
-    //             (configSTACK_DEPTH_TYPE)TASK4_STACK_DEPTH,
-    //             (void *)NULL,
-    //             (UBaseType_t)TASK4_PRIORITY,
-    //             (TaskHandle_t *)&task4_handler);
+    xTaskCreate((TaskFunction_t)UARTEx,
+                (char *)"UARTEx",
+                (configSTACK_DEPTH_TYPE)TASK4_STACK_DEPTH,
+                (void *)NULL,
+                (UBaseType_t)TASK4_PRIORITY,
+                (TaskHandle_t *)&task4_handler);
 
     taskEXIT_CRITICAL(); /* 退出临界区 */
     vTaskDelete(NULL);   /* 任务自删除 */
@@ -142,13 +142,17 @@ void KEY(void *pvParameters)
         int KeyNum = Key_GetNum();
         if (KeyNum == 1)
         {
+            taskENTER_CRITICAL(); // 进入临界区
             printf("1");
             vTaskResume(task1_handler); // 任务恢复
+            taskEXIT_CRITICAL();        // 退出临界区
         }
         else if (KeyNum == 2)
         {
+            taskENTER_CRITICAL(); // 进入临界区
             printf("2");
             vTaskSuspend(task1_handler); // 任务挂起
+            taskEXIT_CRITICAL();         // 退出临界区
         }
     }
 }
@@ -157,8 +161,8 @@ void UARTEx(void *pvParameters)
 {
     while (1)
     {
-        printf("hello world\n");
-        vTaskDelay(1000);
+        // printf("hello world\n");
+        // vTaskDelay(1000);
         HAL_UARTEx_ReceiveToIdle_IT(&huart1, arr, 100);
         if (isOver)
         {
