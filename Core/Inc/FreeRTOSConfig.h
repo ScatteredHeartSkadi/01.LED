@@ -91,6 +91,9 @@ to exclude the API function. */
 /* 同上. 仅用于新版移植。 这两者是等效的。 */  
 #define configMAX_API_CALL_INTERRUPT_PRIORITY   configMAX_SYSCALL_INTERRUPT_PRIORITY
 
+#define configUSE_TIME_SLICING                          1
+#define configUSE_PREEMPTION                            1
+// #define configTICK_RATE_HZ          ( ( TickType_t ) 20 )
 
 
  /* equivalent to 0xb0, or priority 11. */

@@ -38,7 +38,7 @@ extern UART_HandleTypeDef huart1;
 
 /* USER CODE END Private defines */
 
-void MX_USART1_UART_Init(void);
+void MX_USART1_UART_Init(void);// 初始化USART1的UART模块
 
 /* USER CODE BEGIN Prototypes */
 

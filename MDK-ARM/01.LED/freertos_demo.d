@@ -44,3 +44,4 @@
 01.led\freertos_demo.o: ../Core/Hardware/MPU6050.h
 01.led\freertos_demo.o: ../Core/Hardware/key.h
 01.led\freertos_demo.o: ../Core/Inc/usart.h
+01.led\freertos_demo.o: ../FreeRTOS/include/queue.h

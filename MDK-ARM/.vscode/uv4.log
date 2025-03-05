@@ -1,3 +1,13 @@
-Load "01.LED\\01.LED" 
-Erase Done.Programming Done.Verify OK.Application running ...
-Flash Load finished at 20:20:03
+*** Using Compiler 'V5.06 update 5 (build 528)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Build target '01.LED'
+compiling LED.c...
+..\Core\Hardware\LED.h(17): warning:  #1295-D: Deprecated declaration LED_ON_OFF - give arg types
+  void LED_ON_OFF();             // 打开指定LED，关闭其他LED
+..\Core\Hardware\LED.c(84): warning:  #223-D: function "vTaskDelay" declared implicitly
+        vTaskDelay(500);
+..\Core\Hardware\LED.c: 2 warnings, 0 errors
+linking...
+Program Size: Code=10756 RO-data=312 RW-data=136 ZI-data=19024  
+FromELF: creating hex file...
+"01.LED\01.LED" - 0 Error(s), 2 Warning(s).
+Build Time Elapsed:  00:00:02

@@ -12,6 +12,8 @@
         "freertos.h": "c",
         "callback.h": "c",
         "stm32f1xx_it.h": "c",
-        "tim.h": "c"
+        "tim.h": "c",
+        "task.h": "c",
+        "key.h": "c"
     }
 }

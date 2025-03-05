@@ -25,17 +25,17 @@ uint8_t Key_GetNum(void)
 
 	if (HAL_GPIO_ReadPin(KEY1_GPIO_Port, KEY1_Pin) == GPIO_PIN_RESET) // 读PB11输入寄存器的状态，如果为0，则代表按键2按下
 	{
-		vTaskDelay(20); // 延时消抖
+		vTaskDelay(500); // 延时消抖
 		while (HAL_GPIO_ReadPin(KEY2_GPIO_Port, KEY1_Pin) == GPIO_PIN_RESET);		   // 等待按键松手
-		vTaskDelay(20); // 延时消抖
+		vTaskDelay(500); // 延时消抖
 		KeyNum = 1;	   // 置键码为2
 	}
 
 	if (HAL_GPIO_ReadPin(KEY1_GPIO_Port, KEY2_Pin) == GPIO_PIN_RESET) // 读PB11输入寄存器的状态，如果为0，则代表按键2按下
 	{
-		vTaskDelay(20); // 延时消抖
+		vTaskDelay(500); // 延时消抖
 		while (HAL_GPIO_ReadPin(KEY2_GPIO_Port, KEY2_Pin) == GPIO_PIN_RESET);		   // 等待按键松手
-		vTaskDelay(20); // 延时消抖
+		vTaskDelay(500); // 延时消抖
 		KeyNum = 2;	   // 置键码为2
 	}
 
